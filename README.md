@@ -6,4 +6,4 @@ Web site using RTMP streaming protocol, so rtmpdump is a requirment. To generate
 ## How to use
 TODO
 ## Author
-Author of the script is Alex Samorukov, samm@os2.kiev.ua. If you found any issue please submit it via issue tracker or pull request. 
+Author of the script is Alex Samorukov, samm@os2.kiev.ua. If you found any issue please submit it via [issue tracker](https://github.com/samm-git/staroeradio-dl/issues) or [pull request](https://github.com/samm-git/staroeradio-dl/pulls). 

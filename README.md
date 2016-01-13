@@ -12,6 +12,8 @@ You should run the script with `-u <url>`, e.g.
 - `http://svidetel.su/audio/<id>`
 - `http://staroeradio.ru/audio/<id>`
 
+By default files are saved in the filename provided by the the server. You can override it using `-o <filename>` command line switch. 
+
 Download speed is low, because RTMPDump is running with the `--live` switch. This is a server limitation, if this switch is not specified sound is choppy. Downloader also grabs information from the page and placing it in the MP3 tags. Files are created by FFmpeg without recoding, in the original bitrate.
 
 ## Author

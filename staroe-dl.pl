@@ -57,5 +57,4 @@ if(defined $options{o}) {
 }
 print "Saving to '".$savefname."'\n";
 $reqname =~ s/\.mp3$//; # cut mp3 suffix
-system("rtmpdump -r 'rtmp://server.audiopedia.su/vod/' -y 'mp3:".$ref->{dir}."/".$reqname."' --live -o - | 
-    ffmpeg -loglevel warning -y -i - -acodec copy  -metadata title='$ref->{fullname}' -metadata artist='$domain' '$savefname'");
+system("ffmpeg -rtmp_playpath 'mp3:".$ref->{dir}."/".$reqname."' -i 'rtmp://server.audiopedia.su/vod/'  -y  -acodec copy  -metadata title='$ref->{fullname}' -metadata artist='$domain' '$savefname'");

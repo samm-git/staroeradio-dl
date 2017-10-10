@@ -5,6 +5,15 @@ use LWP::Simple;
 use XML::Simple;
 use Getopt::Std;
 
+
+my $osname = $^O;
+
+# Fix to work with unicode in the windows console
+if( $osname eq 'MSWin32' ){{
+  use Win32::Console;
+  Win32::Console::OutputCP(65001);
+}}
+
 # declare the perl command line flags/options we want to allow
 my %options=();
 getopts("hu:o:", \%options);
